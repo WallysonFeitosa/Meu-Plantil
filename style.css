@@ -1,0 +1,384 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+
+:root {
+    --titulos: 'Montserrat Alternates', sans-serif;
+    --paragrafos: 'Playfair Display', serif;
+    --sub : 'Titan One', cursive;
+    --cor1:#0E4011;
+    --cor2:#32E53D;
+    --cor3:#38FF44;
+    --cor4:#1C7F22;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(115, 163, 115, 0.329);
+    height: 100vh;
+    width: 100%;
+}
+
+
+.cabeçalho {
+    background-color: #0e401185;
+    background-image: url(imagens/capa4.png);
+    box-shadow: inset  5px 2px 9px black;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-top: 40px;
+    text-align: center;
+    min-height: 150px;
+}
+
+.titulo {
+    color: var(--cor3);
+    font-size: 80px;
+    font-family: var(--titulos);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.644);
+}
+
+header > p {
+    color: white;
+    font-family: var(--paragrafos);
+    text-shadow: 6px 4px 4px  black;
+    font-size: 30px;
+}
+
+.telefone {
+    text-decoration: underline;
+    padding: 15px;
+    font-size: 15px;
+    font-family: var(--titulos);
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 6px 4px 4px  black;
+    
+   
+}
+
+nav {
+    
+    background-color: rgb(101, 163, 101);
+    padding: 12px;
+    box-shadow: 4px  4px 9px rgba(0, 0, 0, 0.486);
+}
+
+nav > a {
+    color: #0E4011;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bolder;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color:var(--cor1);
+    color:var(--cor3);
+}
+
+nav > #pesquisa {
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    padding: 5px;
+    margin-left: 25px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.589);
+}
+
+button {
+    font-family: var(--paragrafos);
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:var(--cor1);
+    color:var(--cor3);
+    transition: .5s;
+}
+
+.sobre {
+    background-color: rgba(61, 167, 61, 0.651);
+    text-align: center;
+    background-image: url(imagens/ficus-elastica-010.jpg);
+    background-position: right, center;
+    background-attachment: fixed;
+    margin: auto;
+    height: 500px;
+    width: 1400px;
+    border-radius: 20px;
+}
+
+
+.sobre > h1 {
+    font-family: var(--titulos);
+    color: white;
+    font-size: 60px;
+    padding: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+}
+
+
+.sobre > p {
+    font-family: var(--titulos);
+    color: rgba(255, 255, 255, 0.993);
+    text-align: justify;
+    line-height: 2em;
+    margin: 10px;
+    padding: 16px;
+    text-indent: 20px;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bolder;
+}
+
+.escolha {
+    text-align: center;
+    font-family: var(--titulos);
+    font-weight: bold;
+    font-size: 60px;
+    padding: 30px;
+}
+
+.cards {
+    padding: 5px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: inset 1px 1px 10px 1px black;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #64b36bbe;
+    border-radius: 10px;
+    box-shadow: 1px 2px 9px 1px black;
+    padding: 25px;
+    width: 225px;
+    margin: 3px;
+}
+
+.card > h3 {
+    font-family: var(--titulos);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 16px;
+}
+
+.card > span {
+    font-family: var(--titulos);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-bottom: 16px;
+}
+
+.as {
+    padding: 10px;
+    margin: auto;
+    max-width: 1000px;
+    background-image: url(imagens/21710359_lKDoE.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 20px;
+}
+
+aside {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 25px;
+    background-color: #1c7f23d2;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+aside > h1 {
+    text-align: center;
+    font-family: var(--titulos);
+    font-weight: bolder;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+
+aside > ul {
+    font-family:var(--paragrafos);
+    font-size: 20px;
+    font-weight: 800;
+    list-style-type: '\1F331\00A0';
+}
+aside > ul > li >a {
+    text-decoration: none;
+    color: black;
+}
+
+aside > ul > li >a:hover {
+    color: rgb(126, 190, 126);
+    font-size: 25px;
+}
+
+footer {
+    background-color: rgb(101, 163, 101);
+    padding: 10px;
+    text-align: center;
+    font-family: var(--titulos);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 720px) {
+
+    .sobre {
+        background-color: rgba(61, 167, 61, 0.651);
+        text-align: center;
+        background-image: url(imagens/ficus-elastica-010.jpg);
+        background-position: right, center;
+        background-attachment: fixed;
+        margin: auto;
+        height: 640px;
+        width: auto;
+        border-radius: 20px;
+    }
+
+        .sobre > p {
+        font-family: var(--titulos);
+        color: rgba(255, 255, 255, 0.993);
+        text-align: justify;
+        line-height: 1em;
+        margin: 2px;
+        text-indent: 15px;
+        font-size: 18px;
+        text-shadow: 2px 2px 2px black;
+        font-weight: bolder;
+    }
+
+    .sobre > h1 {
+        font-family: var(--titulos);
+        color: white;
+        font-size: 40px;
+        padding-bottom: 0px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+    }
+    .escolha {
+        text-align: center;
+        font-family: var(--titulos);
+        font-weight: bold;
+        font-size: 30px;
+        padding: 30px;
+    }
+
+    .cards {
+        padding: 0px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 15px;
+        box-shadow: inset 1px 1px 10px 1px black;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        background-color: #64b36bbe;
+        border-radius: 10px;
+        box-shadow: 1px 2px 9px 1px black;
+        padding: 4px;
+        width: 180px;
+        margin: 3px;
+    }
+
+    .card > h3 {
+        font-family: var(--titulos);
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        font-weight: bolder;
+        padding: 10px;
+    }
+
+    .card > span {
+        font-family: var(--titulos);
+        color: white;
+        font-weight: bolder;
+        font-size: 12px;
+        padding-bottom: 6px;
+    }
+
+    .as {
+        padding: 10px;
+        margin: auto;
+        max-width: 600px;
+        background-image: url(imagens/21710359_lKDoE.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        border-radius: 20px;
+    }
+    
+    aside {
+        max-width: 400px;
+        max-height: 500px;
+        margin: auto;
+        margin-bottom: 25px;
+        background-color: #1c7f23d2;
+        margin-top: 50px;
+        padding: 40px;
+        border-radius: 15px;
+    }
+    
+    aside > h1 {
+        text-align: center;
+        font-family: var(--titulos);
+        font-weight: bolder;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    
+    
+    aside > ul {
+        font-family:var(--paragrafos);
+        font-size: 15px;
+        font-weight: 800;
+        list-style-type: '\1F331\00A0';
+    }
+    aside > ul > li >a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    aside > ul > li >a:hover {
+        color: rgb(126, 190, 126);
+        font-size: 18px;
+    }
+
+}
